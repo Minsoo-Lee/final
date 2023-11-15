@@ -162,30 +162,7 @@ public class Main {
         image.setLayout(null);
         image.setBounds(650, 350, 350,180);
         frame.add(image);
-        clientSwing CS = new clientSwing();
 
-        JButton btnNewButton_1 = new JButton("채팅");
-
-        btnNewButton_1.setBorderPainted(true);
-        btnNewButton_1.setBounds(690, 540, 250, 80);
-        frame.getContentPane().add(btnNewButton_1);
-        btnNewButton_1.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-
-                if(Chat_visible == false){
-                    Chat_visible = true;
-                    CS.check();
-                }
-                else if(Chat_visible == true){
-                    Chat_visible = false;
-                    CS.check();
-                }
-
-
-
-            }
-        });
         //153 12 282 284 282+12
         // 아래 부터 각 버튼을 눌렀을때 각 기능의 GUI visible을 True로 만들어 화면에 표시함
         Calculator cc = new Calculator();
